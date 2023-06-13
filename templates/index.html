@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mathew's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+    <style>
+        .static_ms {
+          background: white;
+          position:absolute;
+        }
+        .static_ms:hover {
+            opacity:0;
+        }
+    </style>
+</head>
+<body>
+<nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-dark px-3 mb-3 sticky-top ">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="{{ url_for('home') }}"><h2>Mathew's Portfolio</h2></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav flex-row flex-wrap ms-md-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#scrollspyHeading1">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#scrollspyHeading2">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#scrollspyHeading3">Third</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#scrollspyHeading4">Fourth</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#scrollspyHeading5">Fifth</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+         data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <h4 id="scrollspyHeading1">About</h4>
+        <p></p>
+        <h4 id="scrollspyHeading2">Projects</h4>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                             <div class="overflow-auto">
+                                 <!--IMG 1400x750-->
+                                 <img class="static_ms" style='width: 100%' src="/static/img/mathew-portfolio1.png">
+                                 <img style='width: 100%' src="/static/img/mathew-portfolio1.gif">
+                             </div>
+                            <div class="card-body">
+                                <p class="card-text"><b>First portfolio app.</b><br>
+                                <b>Technologies:</b> Python, HTML, CSS, Flask, JS, Boostrap</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="https://github.com/Wolanin00/Portfolio_Page_1" type="button" class="btn btn-sm btn-outline-secondary" target=”_blank”>Repositories</a>
+                                        <a href="https://mathew-portfolio1.onrender.com/" type="button" class="btn btn-sm btn-outline-secondary" target=”_blank”>Live</a>
+                                    </div>
+                                    <small class="text-muted">After click wait some time <br>(30 second) to deploy app.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                             <div class="overflow-auto">
+                                 <!--IMG 1400x750-->
+                                 <img class="static_ms" style='width: 100%' src="/static/img/mathew-blog.png">
+                                 <img style='width: 100%' src="/static/img/mathew-blog.gif">
+                             </div>
+                            <div class="card-body">
+                                <p class="card-text"><b>First blog app.</b><br>
+                                <b>Technologies:</b> Python, JS, HTML, CSS, Flask, SQLAlchemy</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="https://github.com/Wolanin00/My_First_Blog" type="button" class="btn btn-sm btn-outline-secondary" target=”_blank”>Repositories</a>
+                                        <a href="https://mathew-blog.onrender.com/" type="button" class="btn btn-sm btn-outline-secondary" target=”_blank”>Live</a>
+                                    </div>
+                                    <small class="text-muted">After click wait some time <br>(30 second) to deploy app.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                             <div class="overflow-auto">
+                                 <!--IMG 1400x750-->
+                                 <img class="static_ms" style='width: 100%' src="/static/img/mathew-top-10-movies.png">
+                                 <img style='width: 100%' src="/static/img/mathew-top-10-movies.gif">
+                             </div>
+                            <div class="card-body">
+                                <p class="card-text">First portfolio app.<br>
+                                Technologies: Python, HTML, CSS, Flask, SQLAlchemy</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="https://github.com/Wolanin00/My_Top_10_Movies" type="button" class="btn btn-sm btn-outline-secondary" target=”_blank”>Repositories</a>
+                                        <a href="https://mathew-top-10-movies.onrender.com/" type="button" class="btn btn-sm btn-outline-secondary" target=”_blank”>Live</a>
+                                    </div>
+                                    <small class="text-muted">After click wait some time <br>(30 second) to deploy app.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 id="scrollspyHeading3">Third heading</h4>
+        <p></p>
+        <h4 id="scrollspyHeading4">Fourth heading</h4>
+        <p></p>
+        <h4 id="scrollspyHeading5">Fifth heading</h4>
+        <p></p>
+    </div>
+</div>
+</body>
+</html>
